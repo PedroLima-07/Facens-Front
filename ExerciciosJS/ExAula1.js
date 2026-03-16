@@ -51,6 +51,8 @@ console.log(dobro(3))*/
 //ex -7
 //Reverse()inverte a ordem do array
 //join()junta tudo em um array
+//split()transforma os caracters da variavel em um array
+//ex: ARARA  .split("A","R","A","R","A")
 /*function inverterString(texto) {
   return texto.split("").reverse().join("");
 }
