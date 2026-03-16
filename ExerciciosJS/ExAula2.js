@@ -22,19 +22,18 @@
 // convert(15.5676);
 
 //3
-function jurosSimples(capital, taxa, tempo) {
-    let montante = capital * (1 + taxa * tempo);
-    return montante;
-}
+// function jurosSimples(capital, taxa, tempo) {
+//   let montante = capital * (1 + taxa * tempo);
+//   return montante;
+// }
 
-function jurosCompostos(capital, taxa, tempo) {
-    let montante = capital * Math.pow((1 + taxa), tempo);
-    return montante;
-}
+// function jurosCompostos(capital, taxa, tempo) {
+//   let montante = capital * Math.pow(1 + taxa, tempo);
+//   return montante;
+// }
 
-
-console.log("Juros Simples: " + jurosSimples(1000, 0.05, 2)); // 1100
-console.log("Juros Compostos: " + jurosCompostos(1000, 0.05, 2)); // 1102.5
+// console.log("Juros Simples: " + jurosSimples(1000, 0.05, 2));
+// console.log("Juros Compostos: " + jurosCompostos(1000, 0.05, 2));
 
 //4
 
@@ -48,12 +47,12 @@ console.log("Juros Compostos: " + jurosCompostos(1000, 0.05, 2)); // 1102.5
 // console.log(divisivel(1));
 
 //5
-function maiorEMenor(vetor) {
-    let maior = Math.max(...vetor);
-    let menor = Math.min(...vetor);
-    return { maior, menor };
-}
-let numeros = [5, 12, 3, 7, 20];
-let resultado = maiorEMenor(numeros);
-console.log("Maior:", resultado.maior); // 20
-console.log("Menor:", resultado.menor); // 3
+// function maiorEMenor(vetor) {
+//   let maior = Math.max(...vetor);
+//   let menor = Math.min(...vetor);
+//   return { maior, menor };
+// }
+// let numeros = [5, 12, 3, 7, 20];
+// let resultado = maiorEMenor(numeros);
+// console.log("Maior:", resultado.maior);
+// console.log("Menor:", resultado.menor);
