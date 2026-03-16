@@ -22,6 +22,19 @@
 // convert(15.5676);
 
 //3
+function jurosSimples(capital, taxa, tempo) {
+    let montante = capital * (1 + taxa * tempo);
+    return montante;
+}
+
+function jurosCompostos(capital, taxa, tempo) {
+    let montante = capital * Math.pow((1 + taxa), tempo);
+    return montante;
+}
+
+
+console.log("Juros Simples: " + jurosSimples(1000, 0.05, 2)); // 1100
+console.log("Juros Compostos: " + jurosCompostos(1000, 0.05, 2)); // 1102.5
 
 //4
 
