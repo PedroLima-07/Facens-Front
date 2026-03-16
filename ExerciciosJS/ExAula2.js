@@ -48,6 +48,12 @@ console.log("Juros Compostos: " + jurosCompostos(1000, 0.05, 2)); // 1102.5
 // console.log(divisivel(1));
 
 //5
-let listNum = {};
-
-function lista(number) {}
+function maiorEMenor(vetor) {
+    let maior = Math.max(...vetor);
+    let menor = Math.min(...vetor);
+    return { maior, menor };
+}
+let numeros = [5, 12, 3, 7, 20];
+let resultado = maiorEMenor(numeros);
+console.log("Maior:", resultado.maior); // 20
+console.log("Menor:", resultado.menor); // 3
