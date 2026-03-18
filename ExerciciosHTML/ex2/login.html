@@ -7,63 +7,136 @@
   </head>
   <body>
     <h1><b>Cadastrar</b></h1>
-    <form action="" method="post">
+    <form
+      action="https://69b898dae69653ffe6a4ed99.mockapi.io/Cadastrar"
+      method="post"
+    >
       <fieldset>
         <legend>Dados do curso</legend>
         <br />
         <p>
-          <label for="nomeCurso">Nome do curso:</label>
-          <input type="text" id="nomeCurso" nome="nomeCurso" />
+          <label for="nomeCurso">Nome do Curso</label>
+          <input type="text" id="nomeCurso" name="nomeCurso" required />
           <br /><br />
           <label for="dataIngresso">Data de Ingresso:</label>
-          <input type="text" id="dataIngresso" nome="dataIngresso" />
+          <input type="date" id="dataIngresso" name="dataIngresso" required />
           <br /><br />
           <label for="valor">Valor</label>
-          <input type="text" id="valor" nome="valor" />
+          <input type="number" id="valor" name="valor" required />
           <br /><br />
-          <label for="formaPagamento">Forma de Pagamento:</label>
-          <input type="text" id="formaPagamento" nome="formaPagamento" />
+          <label>Forma de Pagamento:</label>
+          <br /><br />
+
+          <input
+            type="radio"
+            name="formaPagamento"
+            id="cartao"
+            value="cartao"
+            required
+          />
+          <label for="cartao">Cartão</label>
+
+          <input
+            type="radio"
+            name="formaPagamento"
+            id="boleto"
+            value="boleto"
+            required
+          />
+          <label for="boleto">Boleto</label>
+
+          <input
+            type="radio"
+            name="formaPagamento"
+            id="pix"
+            value="pix"
+            required
+          />
+          <label for="pix">Pix</label>
+
+          <br /><br />
+          <label for="parcelas">Número de parcelas:</label>
+          <input type="number" id="parcelas" name="parcelas" />
         </p>
       </fieldset>
       <fieldset>
         <legend>Dados do Aluno</legend>
         <p>
           <br />
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" nome="nome" />
+          <label for="nomeAluno">Nome:</label>
+          <input type="text" id="nomeAluno" name="nomeAluno" required />
           <br /><br />
-          <label for="endereco">Endereço</label>
-          <input type="text" id="endereco" nome="endereco" />
+          <label for="enderecoAluno">Endereço</label>
+          <input type="text" id="enderecoAluno" name="enderecoAluno" />
           <br /><br />
-          <label for="bairro">Bairro:</label>
-          <input type="text" id="bairro" nome="bairro" />
+          <label for="bairroAluno">Bairro:</label>
+          <input type="text" id="bairroAluno" name="bairroAluno" />
           <br /><br />
-          <label for="cidade">Cidade</label>
-          <input type="text" id="cidade" nome="cidade" />
+          <label for="cidadeAluno">Cidade</label>
+          <input type="text" id="cidadeAluno" name="cidadeAluno" />
           <br /><br />
-          <label for="numero">Numero</label>
-          <input type="numero" id="numero" nome="numero" />
+          <label for="numeroAluno">Numero</label>
+          <input type="number" id="numeroAluno" name="numeroAluno" />
           <br /><br />
-          <label for="cep">CEP:</label>
-          <input type="cep" id="cep" nome="cep" />
+          <label for="cepAluno">CEP:</label>
+          <input type="text" id="cepAluno" name="cepAluno" />
           <br /><br />
-          <label for="complemento">Complemento:</label>
-          <input type="complemento" id="complemento" nome="complemento" />
+          <label for="complementoAluno">Complemento:</label>
+          <input type="text" id="complementoAluno" name="complementoAluno" />
           <br /><br />
-          <label for="estado">Estado:</label>
-          <input type="text" id="estado" nome="estado" />
+          <label for="estadoAluno">Estado:</label>
+          <input type="text" id="estadoAluno" name="estadoAluno" />
           <br /><br />
-          <label for="telefone">Telefone:</label>
-          <input type="text" id="telefone" nome="telefone" />
+          <label for="telefoneAluno">Telefone:</label>
+          <input type="text" id="telefoneAluno" name="telefoneAluno" />
           <br /><br />
-          <label for="celular">Celular:</label>
-          <input type="text" id="celular" nome="celular" />
+          <label for="celularAluno">Celular:</label>
+          <input type="text" id="celularAluno" name="celularAluno" required />
           <br /><br />
-          <label for="email">E-mail:</label>
-          <input type="text" id="email" nome="email" />
+          <label for="emailAluno">E-mail:</label>
+          <input type="email" id="emailAluno" name="emailAluno" required />
           <br /><br />
-          <label for="cor">Cor</label>
-          <input type="cor" id="cor" nome="cor" />
+          <label>Cor:</label>
+          <input
+            type="radio"
+            name="corAluno"
+            id="corBranco"
+            value="branco"
+            required
+          />
+          <label>Branco</label>
+          <input
+            type="radio"
+            name="corAluno"
+            id="corPreto"
+            value="preto"
+            required
+          />
+          <label>Preta</label>
+          <input
+            type="radio"
+            name="corAluno"
+            id="corPardo"
+            value="pardo"
+            required
+          />
+          <label>Parda</label>
+          <input
+            type="radio"
+            name="corAluno"
+            id="corAmarelo"
+            value="Amarelo"
+            required
+          />
+          <label>Amarela</label>
+          <input
+            type="radio"
+            name="corAluno"
+            id="corIndigena"
+            value="indigena"
+            required
+          />
+          <label>Indígena</label>
         </p>
       </fieldset>
 
@@ -72,59 +145,95 @@
         <p>
           <br />
           <label for="nomePai">Nome do Pai:</label>
-          <input type="text" id="nomePai" nome="nomePai" />
+          <input type="text" id="nomePai" name="nomePai" required />
           <br /><br />
-          <label for="dataNascimento">Data de Nascimento:</label>
-          <input type="text" id="dataNascimento" nome="dataNascimento" />
+          <label for="dataNascimentoPai">Data de Nascimento:</label>
+          <input type="date" id="dataNascimentoPai" name="dataNascimentoPai" />
           <br /><br />
           <label for="naturalidadePai">Naturalidade:</label>
-          <input type="" id="naturalidadePai" nome="naturalidadePai" />
+          <input type="text" id="naturalidadePai" name="naturalidadePai" />
           <br /><br />
-          <label for="instrução">Instrução:</label>
-          <input type="text" id="instrução" nome="instrução" />
+          <label for="instrucaoPai">Instrução:</label>
+          <input type="text" id="instrucaoPai" name="instrucaoPai" />
           <br /><br />
-          <label for="profissão">Profissão:</label>
-          <input type="text" id="profissão" nome="profissão" />
+          <label for="profissaoPai">Profissão:</label>
+          <input type="text" id="profissaoPai" name="profissaoPai" />
           <br /><br />
-          <label for="celular">Celular:</label>
-          <input type="text" id="celular" nome="celular" />
+          <label for="celularPai">Celular:</label>
+          <input type="text" id="celularPai" name="celularPai" required />
           <br /><br />
           <label for="emailPai">E-mail:</label>
-          <input type="text" id="emailPai" nome="emailPai" />
+          <input type="email" id="emailPai" name="emailPai" required />
           <br /><br />
-          <label for="cpfMae">CPF:</label>
-          <input type="text" id="cpfMae" nome="cpfMae" />
+          <label for="cpfPai">CPF:</label>
+          <input type="text" id="cpfPai" name="cpfPai" required />
+          <br />
+          <br />
+          <label for="responsavelFinanPai">Responsavel Financeiro:</label>
+          <input
+            type="radio"
+            name="responsavelFinanPai"
+            id="paiSim"
+            value="s"
+          />
+          <label for="paiSim">Sim</label>
+          <input
+            type="radio"
+            name="responsavelFinanPai"
+            id="paiNao"
+            value="n"
+          />
+          <label for="paiNao">Não</label>
         </p>
       </fieldset>
       <fieldset>
         <legend>Dados da Mãe</legend>
         <br />
         <p>
-          <label for="nomePai">Nome do Pai:</label>
-          <input type="text" id="nomePai" nome="nomePai" />
+          <label for="nomeMae">Nome da Mãe:</label>
+          <input type="text" id="nomeMae" name="nomeMae" />
           <br /><br />
-          <label for="dataNascimento">Data de Nascimento:</label>
-          <input type="text" id="dataNascimento" nome="dataNascimento" />
+          <label for="dataNascimentoMae">Data de Nascimento:</label>
+          <input type="date" id="dataNascimentoMae" name="dataNascimentoMae" />
           <br /><br />
-          <label for="naturalidadePai">Naturalidade:</label>
-          <input type="" id="naturalidadePai" nome="naturalidadePai" />
+          <label for="naturalidadeMae">Naturalidade:</label>
+          <input type="text" id="naturalidadeMae" name="naturalidadeMae" />
           <br /><br />
-          <label for="instrução">Instrução:</label>
-          <input type="text" id="instrução" nome="instrução" />
+          <label for="instrucaoMae">Instrução:</label>
+          <input type="text" id="instrucaoMae" name="instrucaoMae" />
           <br /><br />
-          <label for="profissão">Profissão:</label>
-          <input type="text" id="profissão" nome="profissão" />
+          <label for="profissaoMae">Profissão:</label>
+          <input type="text" id="profissaoMae" name="profissaoMae" />
           <br /><br />
-          <label for="celular">Celular:</label>
-          <input type="text" id="celular" nome="celular" />
+          <label for="celularMae">Celular:</label>
+          <input type="text" id="celularMae" name="celularMae" required />
           <br /><br />
-          <label for="emailPai">E-mail:</label>
-          <input type="text" id="emailPai" nome="emailPai" />
+          <label for="emailMae">E-mail:</label>
+          <input type="email" id="emailMae" name="emailMae" required />
           <br /><br />
           <label for="cpfMae">CPF:</label>
-          <input type="text" id="cpfMae" nome="cpfMae" />
+          <input type="text" id="cpfMae" name="cpfMae" required />
+          <br /><br />
+          <label for="responsavelFinanMae">Responsavel Financeiro:</label>
+          <input
+            type="radio"
+            name="responsavelFinanMae"
+            id="maeSim"
+            value="s"
+          />
+          <label for="maeSim">Sim</label>
+          <input
+            type="radio"
+            name="responsavelFinanMae"
+            id="maeNao"
+            value="n"
+          />
+          <label for="maeNao">Não</label>
         </p>
       </fieldset>
+      <br />
+      <button type="submit">Cadastrar</button>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>
