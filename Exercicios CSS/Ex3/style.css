@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  display: flex;
+  width: 205px;
+  flex-direction: column;
+
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #8492b4;
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+.botao {
+  display: flex;
+  justify-content: flex-end;
+}
